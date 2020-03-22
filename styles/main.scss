@@ -1,0 +1,1476 @@
+////////////////  KONFIGURASI DASAR ////////////////////
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #f18f26;
+}
+
+////////////////  AKHIR KONFIGURASI DASAR ////////////////////
+
+/////////////////// RESPONSIVE MEDIA ///////////////////////////
+
+////////////////// MEDIUM DEVICES ///////////////////////////
+
+@media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  ///////////////// DEKORASI ////////////////////////////
+
+  .kotak-besar-kanan,
+  .kotak-besar-kiri {
+    display: none !important;
+  }
+
+  ////////////////////// NAVBAR ////////////////////////////
+
+  .navbar {
+    height: 70px;
+    padding: 10px;
+  }
+
+  // Kelas yang dimanipulasi oleh Javascript
+  .nav-colored {
+    background-color: rgba(62, 28, 0, 0.8);
+  }
+
+  .nav-transparent {
+    background-color: transparent;
+  }
+
+  a.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #navbarNav {
+    margin-top: 5px;
+    transform: scaleX(1.05);
+    height: 200px;
+    position: relative;
+    background-color: rgba(62, 28, 0, 0.8);
+    padding: 20px;
+
+    a.nav-user {
+      float: right;
+    }
+  }
+
+  ///////////////////////// AKHIR NAVBAR ////////////////////////
+
+  //////////////////////// SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  section.information {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .col-sm-12.info {
+      position: relative;
+
+      h1,
+      h3 {
+        font-weight: bold;
+        color: rgb(62, 28, 0);
+      }
+
+      .btn.order {
+        background-color: rgba(62, 28, 0, 0.8);
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        margin-left: 35%;
+      }
+
+      .btn.order:hover {
+        background-color: white;
+        color: rgba(62, 28, 0, 0.8);
+        border: 1px solid rgba(62, 28, 0, 0.8);
+        transition: 0.1s;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .col-sm-12.images {
+      position: relative;
+      #search {
+        position: absolute;
+        top: 0px !important;
+        left: 20px !important;
+        width: 80px !important;
+        height: 40px !important;
+        border: none;
+        color: white;
+        background-color: rgb(62, 28, 0);
+        opacity: 0.8;
+
+        padding: 10px;
+        margin-bottom: 50px;
+
+        #search::placeholder {
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+
+      .hero-image {
+        width: 80% !important;
+        margin-top: 150px !important;
+        margin-left: -5px !important;
+      }
+
+      .hero-image:hover {
+        transition: 0.5s;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .figure-image {
+        a img {
+          margin-top: 3px;
+          width: 125px !important;
+        }
+
+        a img:hover {
+          transition: 0.3s;
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+
+  .autoscroll {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .autoscroll a:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+
+  //////////////////////// AKHIR SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  ////////////////////// JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  .jumbotron-fluid.satu {
+    background-image: url("../images/big-jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -45px;
+    height: 40vh;
+    width: 720px !important;
+  }
+
+  .jumbotron-fluid.dua {
+    background-image: url("../images/machiato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    margin-top: 100px;
+    height: 40vh;
+    width: 720px !important;
+  }
+
+  ////////////////////// AKHIR JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  //////////////////////// LIST PRODUCT WITH PRICE ///////////////////////////
+
+  .product {
+    .row {
+      .col-12 {
+        h1 {
+          color: rgb(62, 28, 0);
+        }
+      }
+    }
+
+    .row {
+      .col-sm-12 {
+        .card {
+          border: none;
+          background-color: transparent;
+          position: relative;
+          margin-bottom: 100px;
+
+          .card-body {
+            position: absolute;
+            bottom: -50px;
+            left: 65px;
+            background-color: white;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+            margin-left: 120px !important;
+            margin-top: -40px;
+
+            .card-title {
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            button.btn.buy-item {
+              width: 90px;
+              padding: 5px;
+              height: 40px;
+              border-radius: 10px;
+              background-color: rgb(62, 28, 0);
+              color: white;
+              font-size: 15px;
+            }
+
+            button.btn.buy-item:hover {
+              background-color: white;
+              color: rgba(62, 28, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .btn.more {
+      background-color: rgba(62, 28, 0, 0.8);
+      color: white;
+      margin-top: 60px;
+      margin-left: 42% !important;
+    }
+
+    .btn.more:hover {
+      background-color: white;
+      color: rgba(62, 28, 0, 0.8);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  //////////////////////// AKHIR LIST PRODUCT WITH PRICE ///////////////////////////
+
+  //////////////////////// FOOTER ///////////////////////////
+
+  footer {
+    margin-top: 0px !important;
+    background-color: #f18f26;
+    padding: 50px;
+
+    .col-lg-5 {
+      margin-left: 70px;
+      .footer-logo {
+        h4 {
+          font-weight: bold;
+          font-size: 40px;
+          color: ​#3e1c00;
+          text-align: center !important;
+        }
+      }
+
+      ul {
+        font-size: 20px;
+        color: ​#3e1c00;
+        list-style-type: none;
+        margin-top: 40px;
+        text-align: center !important;
+      }
+
+      .footer-social {
+        margin-top: 50px;
+        margin-left: 30px !important;
+
+        a {
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          background: rgb(62, 28, 0);
+          color: #ffffff;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          margin-right: 7px;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+      .footer-social a:hover {
+        background: rgb(124, 63, 0);
+        color: rgb(62, 28, 0);
+        box-shadow: 2px 2px 8px rgb(62, 28, 0);
+      }
+    }
+
+    .row {
+      hr {
+        border: 5px solid ​#3e1c00;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      .copyrights {
+        margin-top: 20px auto;
+        font-size: 20px;
+        color: ​#3e1c00;
+        margin-left: 70px !important;
+      }
+    }
+  }
+
+  //////////////////////// AKHIR FOOTER ///////////////////////////
+}
+
+//////////////// AKHIR MEDIUM DEVICES ///////////////////////
+
+///////////////////// EXTRA LARGE ///////////////////////////
+@media (max-width: 960px) {
+  ////////////////////////DEKORASI///////////////////////////
+
+  .kotak-besar-kanan,
+  .kotak-besar-kiri {
+    display: none !important;
+  }
+
+  ////////////////////// AKHIR DEKORASI /////////////////////
+
+  ////////////////////// NAVBAR ////////////////////////////
+
+  .navbar {
+    height: 70px;
+    padding: 10px;
+  }
+
+  // Kelas yang dimanipulasi oleh Javascript
+  .nav-colored {
+    background-color: rgba(62, 28, 0, 0.8);
+  }
+
+  .nav-transparent {
+    background-color: transparent;
+  }
+
+  a.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #navbarNav {
+    position: relative;
+
+    .navbar-nav {
+      margin: 20px auto;
+
+      .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-radius: 30%;
+        border-bottom: 3px solid #68462e;
+        width: 50%;
+        margin: auto;
+      }
+
+      .nav-user {
+        position: absolute;
+        right: 0;
+        margin-top: -5px;
+      }
+    }
+  }
+
+  ///////////////////////// AKHIR NAVBAR ////////////////////////
+
+  //////////////////////// SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  section.information {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .col-lg-6.info {
+      position: relative;
+
+      h1,
+      h3 {
+        font-weight: bold;
+        color: rgb(62, 28, 0);
+      }
+
+      .btn.order {
+        background-color: rgba(62, 28, 0, 0.8);
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      .btn:hover {
+        background-color: white;
+        color: rgba(62, 28, 0, 0.8);
+        border: 1px solid rgba(62, 28, 0, 0.8);
+        transition: 0.1s;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .col-md-8.images {
+      margin-top: 100px !important;
+      position: relative;
+      #search {
+        position: absolute;
+        top: -200px;
+        left: 0;
+        width: 500px !important;
+        height: 40px;
+        border: none;
+        color: white;
+        background-color: rgb(62, 28, 0);
+        opacity: 0.8;
+        position: absolute;
+        right: 25px;
+        top: -25px;
+        z-index: 2;
+        padding: 10px;
+
+        #search::placeholder {
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+
+      .hero-image {
+        transform: scaleX(1.7);
+        margin-left: 140px !important;
+        margin-top: 50px !important;
+      }
+
+      .hero-image:hover {
+        transition: 0.5s;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .figure-image {
+        margin-top: -50px;
+        margin-left: 35px;
+
+        img {
+          width: 130px;
+        }
+
+        img:hover {
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+          transform: scale(1.2);
+          transition: 0.25s;
+        }
+      }
+    }
+  }
+
+  .autoscroll {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .autoscroll a:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+
+  //////////////////////// AKHIR SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  ////////////////////// JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  .jumbotron-fluid.satu {
+    background-image: url("../images/big-jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -45px;
+    height: 70vh;
+    width: 100%;
+  }
+
+  .jumbotron-fluid.dua {
+    background-image: url("../images/machiato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+    height: 70vh;
+    width: 100%;
+  }
+
+  ////////////////////// AKHIR JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  ////////////////////////DEKORASI///////////////////////////
+
+  .kotak-besar-kiri {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 1110px;
+    left: 0;
+    z-index: -99;
+
+    .kotak10 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(62, 28, 0);
+    }
+
+    .kotak9 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(73, 34, 1);
+    }
+
+    .kotak8 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(86, 43, 0);
+    }
+
+    .kotak7 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(99, 50, 0);
+    }
+
+    .kotak6 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(124, 63, 0);
+    }
+  }
+
+  ////////////////////// AKHIR DEKORASI /////////////////////
+
+  //////////////////////// LIST PRODUCT WITH PRICE ///////////////////////////
+
+  .product {
+    .row {
+      .col-lg-4 {
+        .card {
+          border: none;
+          background-color: transparent;
+          position: relative;
+          margin-bottom: 100px !important;
+
+          .card-body {
+            position: absolute;
+            bottom: -50px;
+            left: 20px;
+            background-color: white;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+            margin-left: 40px !important;
+            margin-top: -40px;
+
+            .card-title {
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            button.btn.buy-item {
+              width: 90px;
+              padding: 5px;
+              height: 40px;
+              border-radius: 10px;
+              background-color: rgb(62, 28, 0);
+              color: white;
+              font-size: 15px;
+            }
+
+            button.btn.buy-item:hover {
+              background-color: white;
+              color: rgba(62, 28, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .btn.more {
+      background-color: rgba(62, 28, 0, 0.8);
+      color: white;
+      margin-top: 120px;
+      margin-left: 52%;
+    }
+
+    .btn.more:hover {
+      background-color: white;
+      color: rgba(62, 28, 0, 0.8);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  //////////////////////// AKHIR LIST PRODUCT WITH PRICE ///////////////////////////
+
+  //////////////////////// FOOTER ///////////////////////////
+
+  footer {
+    margin-top: -50px;
+    background-color: #f18f26;
+    padding: 50px;
+
+    .col-lg-5 {
+      .footer-logo {
+        h4 {
+          font-weight: bold;
+          font-size: 40px;
+          color: ​#3e1c00;
+        }
+      }
+
+      ul {
+        font-size: 20px;
+        color: ​#3e1c00;
+        list-style-type: none;
+        margin-top: 40px;
+      }
+
+      .footer-social a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background: rgb(62, 28, 0);
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 7px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-social a:hover {
+        background: rgb(124, 63, 0);
+        color: rgb(62, 28, 0);
+        box-shadow: 2px 2px 8px rgb(62, 28, 0);
+      }
+    }
+
+    .row {
+      hr {
+        border: 5px solid ​#3e1c00;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      .copyrights {
+        margin-top: 20px;
+        font-size: 20px;
+        color: ​#3e1c00;
+        margin-left: 40%;
+      }
+    }
+  }
+
+  //////////////////////// AKHIR FOOTER ///////////////////////////
+}
+///////////////////// AKHIR EXTRA LARGE ///////////////////////////
+
+///////////////////// EXTRA LARGE ///////////////////////////
+@media (max-width: 1140px) {
+  ////////////////////////DEKORASI///////////////////////////
+
+  .kotak-besar-kanan {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -99;
+
+    .kotak1 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(62, 28, 0);
+    }
+
+    .kotak2 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(73, 34, 1);
+    }
+
+    .kotak3 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(86, 43, 0);
+    }
+
+    .kotak4 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(99, 50, 0);
+    }
+
+    .kotak5 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(124, 63, 0);
+    }
+  }
+
+  ////////////////////// AKHIR DEKORASI /////////////////////
+
+  ////////////////////// NAVBAR ////////////////////////////
+
+  .navbar {
+    height: 70px;
+    padding: 10px;
+  }
+
+  // Kelas yang dimanipulasi oleh Javascript
+  .nav-colored {
+    background-color: rgba(62, 28, 0, 0.8);
+  }
+
+  .nav-transparent {
+    background-color: transparent;
+  }
+
+  a.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #navbarNav {
+    position: relative;
+
+    .navbar-nav {
+      margin: 20px auto;
+
+      .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-radius: 30%;
+        border-bottom: 3px solid #68462e;
+        width: 50%;
+        margin: auto;
+      }
+
+      .nav-user {
+        position: absolute;
+        right: 0;
+        margin-top: -5px;
+      }
+    }
+  }
+
+  ///////////////////////// AKHIR NAVBAR ////////////////////////
+
+  //////////////////////// SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  section.information {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .col-lg-6.info {
+      position: relative;
+
+      h1,
+      h3 {
+        font-weight: bold;
+        color: rgb(62, 28, 0);
+      }
+
+      .btn.order {
+        background-color: rgba(62, 28, 0, 0.8);
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      .btn:hover {
+        background-color: white;
+        color: rgba(62, 28, 0, 0.8);
+        border: 1px solid rgba(62, 28, 0, 0.8);
+        transition: 0.1s;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .col-lg-6.images {
+      #search {
+        width: 200px;
+        height: 40px;
+        border: none;
+        color: white;
+        background-color: rgb(62, 28, 0);
+        opacity: 0.8;
+        position: absolute;
+        right: 25px;
+        top: -25px;
+        z-index: 2;
+        padding: 10px;
+
+        #search::placeholder {
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+
+      .hero-image {
+        width: 100%;
+      }
+
+      .hero-image:hover {
+        transition: 0.5s;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .figure-image {
+        margin-top: -50px;
+        margin-left: 35px;
+
+        img {
+          width: 125px !important;
+        }
+
+        img:hover {
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+          transform: scale(1.2);
+          transition: 0.25s;
+        }
+      }
+    }
+  }
+
+  .autoscroll {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .autoscroll a:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+
+  //////////////////////// AKHIR SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  ////////////////////// JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  .jumbotron-fluid.satu {
+    background-image: url("../images/big-jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -100px !important;
+    height: 70vh;
+    width: 100%;
+  }
+
+  .jumbotron-fluid.dua {
+    background-image: url("../images/machiato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+    height: 70vh;
+    width: 100%;
+  }
+
+  ////////////////////// AKHIR JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  ////////////////////////DEKORASI///////////////////////////
+
+  .kotak-besar-kiri {
+    width: 500px;
+    height: 100vh;
+    margin-top: -20px !important;
+    display: flex;
+    position: absolute;
+    top: 1110px;
+    left: 0;
+    z-index: -99;
+
+    .kotak10 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(62, 28, 0);
+    }
+
+    .kotak9 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(73, 34, 1);
+    }
+
+    .kotak8 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(86, 43, 0);
+    }
+
+    .kotak7 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(99, 50, 0);
+    }
+
+    .kotak6 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(124, 63, 0);
+    }
+  }
+
+  ////////////////////// AKHIR DEKORASI /////////////////////
+
+  //////////////////////// LIST PRODUCT WITH PRICE ///////////////////////////
+
+  .product {
+    .row {
+      .col-lg-4 {
+        .card {
+          border: none;
+          background-color: transparent;
+          position: relative;
+
+          .card-body {
+            position: absolute;
+            bottom: -50px;
+            left: 20px;
+            background-color: white;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+            margin-left: 80px !important;
+            margin-top: -40px;
+
+            .card-title {
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            button.btn.buy-item {
+              width: 90px;
+              padding: 5px;
+              height: 40px;
+              border-radius: 10px;
+              background-color: rgb(62, 28, 0);
+              color: white;
+              font-size: 15px;
+            }
+
+            button.btn.buy-item:hover {
+              background-color: white;
+              color: rgba(62, 28, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .btn.more {
+      background-color: rgba(62, 28, 0, 0.8);
+      color: white;
+      margin-top: 120px;
+      margin-left: 45% !important;
+    }
+
+    .btn.more:hover {
+      background-color: white;
+      color: rgba(62, 28, 0, 0.8);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  //////////////////////// AKHIR LIST PRODUCT WITH PRICE ///////////////////////////
+
+  //////////////////////// FOOTER ///////////////////////////
+
+  footer {
+    margin-top: -50px;
+    background-color: #f18f26;
+    padding: 50px;
+
+    .col-lg-5 {
+      .footer-logo {
+        h4 {
+          font-weight: bold;
+          font-size: 40px;
+          color: ​#3e1c00;
+        }
+      }
+
+      ul {
+        font-size: 20px;
+        color: ​#3e1c00;
+        list-style-type: none;
+        margin-top: 40px;
+      }
+
+      .footer-social a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background: rgb(62, 28, 0);
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 7px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-social a:hover {
+        background: rgb(124, 63, 0);
+        color: rgb(62, 28, 0);
+        box-shadow: 2px 2px 8px rgb(62, 28, 0);
+      }
+    }
+
+    .row {
+      hr {
+        border: 5px solid ​#3e1c00;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      .copyrights {
+        margin-top: 20px;
+        font-size: 20px;
+        color: ​#3e1c00;
+        margin-left: 40%;
+      }
+    }
+  }
+
+  //////////////////////// AKHIR FOOTER ///////////////////////////
+}
+///////////////////// AKHIR EXTRA LARGE ///////////////////////////
+
+///////////////////// EXTRA LARGE ///////////////////////////
+@media (max-width: 1366px) {
+  ////////////////////////DEKORASI///////////////////////////
+
+  .kotak-besar-kanan {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -99;
+
+    .kotak1 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(62, 28, 0);
+    }
+
+    .kotak2 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(73, 34, 1);
+    }
+
+    .kotak3 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(86, 43, 0);
+    }
+
+    .kotak4 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(99, 50, 0);
+    }
+
+    .kotak5 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(124, 63, 0);
+    }
+  }
+
+  ////////////////////// AKHIR DEKORASI /////////////////////
+
+  ////////////////////// NAVBAR ////////////////////////////
+
+  .navbar {
+    height: 70px;
+    padding: 10px;
+  }
+
+  // Kelas yang dimanipulasi oleh Javascript
+  .nav-colored {
+    background-color: rgba(62, 28, 0, 0.8);
+  }
+
+  .nav-transparent {
+    background-color: transparent;
+  }
+
+  a.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #navbarNav {
+    position: relative;
+
+    .navbar-nav {
+      margin: 20px auto;
+
+      .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-radius: 30%;
+        border-bottom: 3px solid #68462e;
+        width: 50%;
+        margin: auto;
+      }
+
+      .nav-user {
+        position: absolute;
+        right: 0;
+        margin-top: -5px;
+      }
+    }
+  }
+
+  ///////////////////////// AKHIR NAVBAR ////////////////////////
+
+  //////////////////////// SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  section.information {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .col-lg-6.info {
+      position: relative;
+
+      h1,
+      h3 {
+        font-weight: bold;
+        color: rgb(62, 28, 0);
+      }
+
+      .btn.order {
+        background-color: rgba(62, 28, 0, 0.8);
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      .btn:hover {
+        background-color: white;
+        color: rgba(62, 28, 0, 0.8);
+        border: 1px solid rgba(62, 28, 0, 0.8);
+        transition: 0.1s;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    .col-lg-6.images {
+      #search {
+        width: 200px;
+        height: 40px;
+        border: none;
+        color: white;
+        background-color: rgb(62, 28, 0);
+        opacity: 0.8;
+        position: absolute;
+        right: 25px;
+        top: -25px;
+        z-index: 2;
+        padding: 10px;
+
+        #search::placeholder {
+          color: white;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+
+      .hero-image {
+        width: 100%;
+      }
+
+      .hero-image:hover {
+        transition: 0.5s;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .figure-image {
+        margin-top: -50px;
+        margin-left: 35px;
+
+        img:hover {
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+          transform: scale(1.2);
+          transition: 0.25s;
+        }
+      }
+    }
+  }
+
+  .autoscroll {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .autoscroll a:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+
+  //////////////////////// AKHIR SECTION INFORMATION PRODUCT 1 ///////////////////////////
+
+  ////////////////////// JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  .jumbotron-fluid.satu {
+    background-image: url("../images/big-jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -45px;
+    height: 70vh;
+    width: 100%;
+  }
+
+  .jumbotron-fluid.dua {
+    background-image: url("../images/machiato.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+    height: 70vh;
+    width: 100%;
+  }
+
+  ////////////////////// AKHIR JUMBOTRON IMAGE WITH PARALLAX EFFECT ///////////////////////////
+
+  ////////////////////////DEKORASI///////////////////////////
+
+  .kotak-besar-kiri {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 1110px;
+    left: 0;
+    z-index: -99;
+
+    .kotak10 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(62, 28, 0);
+    }
+
+    .kotak9 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(73, 34, 1);
+    }
+
+    .kotak8 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(86, 43, 0);
+    }
+
+    .kotak7 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(99, 50, 0);
+    }
+
+    .kotak6 {
+      width: 100px;
+      height: 100vh;
+      background-color: rgb(124, 63, 0);
+    }
+  }
+
+  ////////////////////// AKHIR DEKORASI /////////////////////
+
+  //////////////////////// LIST PRODUCT WITH PRICE ///////////////////////////
+
+  .product {
+    .row {
+      .col-lg-4 {
+        .card {
+          border: none;
+          background-color: transparent;
+          position: relative;
+
+          .card-body {
+            position: absolute;
+            bottom: -50px;
+            left: 20px;
+            background-color: white;
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba($color: #000000, $alpha: 0.4);
+            margin-left: 50px;
+            margin-top: -40px;
+
+            .card-title {
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            button.btn.buy-item {
+              width: 90px;
+              padding: 5px;
+              height: 40px;
+              border-radius: 10px;
+              background-color: rgb(62, 28, 0);
+              color: white;
+              font-size: 15px;
+            }
+
+            button.btn.buy-item:hover {
+              background-color: white;
+              color: rgba(62, 28, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .btn.more {
+      background-color: rgba(62, 28, 0, 0.8);
+      color: white;
+      margin-top: 120px;
+      margin-left: 52%;
+    }
+
+    .btn.more:hover {
+      background-color: white;
+      color: rgba(62, 28, 0, 0.8);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  //////////////////////// AKHIR LIST PRODUCT WITH PRICE ///////////////////////////
+
+  //////////////////////// FOOTER ///////////////////////////
+
+  footer {
+    margin-top: -50px;
+    background-color: #f18f26;
+    padding: 50px;
+
+    .col-lg-5 {
+      .footer-logo {
+        h4 {
+          font-weight: bold;
+          font-size: 40px;
+          color: ​#3e1c00;
+        }
+      }
+
+      ul {
+        font-size: 20px;
+        color: ​#3e1c00;
+        list-style-type: none;
+        margin-top: 40px;
+      }
+
+      .footer-social a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background: rgb(62, 28, 0);
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        margin-right: 7px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer-social a:hover {
+        background: rgb(124, 63, 0);
+        color: rgb(62, 28, 0);
+        box-shadow: 2px 2px 8px rgb(62, 28, 0);
+      }
+    }
+
+    .row {
+      hr {
+        border: 5px solid ​#3e1c00;
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      .copyrights {
+        margin-top: 20px;
+        font-size: 20px;
+        color: ​#3e1c00;
+        margin-left: 40%;
+      }
+    }
+  }
+
+  //////////////////////// AKHIR FOOTER ///////////////////////////
+}
+///////////////////// AKHIR EXTRA LARGE ///////////////////////////
